@@ -1,5 +1,32 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
     //code here
+    /* sol 1
+    if(passedExam && passedAssignments || passedExam && passedProject ) {
+        return true;
+    } else if (passedAssignments && passedProject || passedExam && passedAssignments ) {
+        return true;
+    } else {
+        return false;
+    }    */
+
+    /* sol 2
+    if(passedExam == true && passedAssignments == true || passedExam == true && passedProject == true ) {
+        return true;
+    } else if (passedAssignments == true && passedProject == true || passedExam == true && passedAssignments == true ) {
+        return true;
+    } else {
+        return false;
+    } */
+
+    /* sol 3
+    if(passedExam && passedAssignments || passedExam && passedProject ) {
+        return true;
+    } else if (passedAssignments && passedProject || passedExam && passedAssignments ) {
+        return true;
+    } 
+        return false; */
+    
+    // sol 4
     Integer count = 0;
     if(passedExam) count++;
     if(passedAssignments) count++;
