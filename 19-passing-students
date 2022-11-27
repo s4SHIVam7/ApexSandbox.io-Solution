@@ -2,8 +2,7 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
     //code here
     if(passedExam && passedAssignments ) {
         return true;
-    } else {
+    } 
         return false;
-    }
-    return false;
+    
 }
