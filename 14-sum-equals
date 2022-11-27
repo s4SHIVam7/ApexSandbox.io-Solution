@@ -1,0 +1,27 @@
+public Boolean sumEquals(Integer a, Integer b, Integer c) {
+    //code here
+    /* sol 1
+    Integer res = a+b;
+    if(res==c){
+      return true;
+    } 
+    return false; */
+
+    /* sol 2
+    Integer res = a+b;
+    Boolean ans = false;
+    if(res==c){
+      ans = true;
+    } 
+    return ans; */
+
+    /* sol 3
+    Integer res = a+b;
+    return (res==c)? true : false ; */
+
+    /* sol 4
+    return (a+b==c)? true : false ; */
+
+    // sol 5
+    return (a+b) == c ? true : false;
+}
