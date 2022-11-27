@@ -1,11 +1,11 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     //code here
     if(a == b+c) {
-        return (String)a;
+        return String.valueOf(a);
     } else if(b == a+c) {
-        return (String)b;
+        return String.valueOf(b);
     } else if(c == a+b) {
-        return (String)c;
+        return String.valueOf(c);
     }
     return '';
 }
