@@ -7,8 +7,5 @@ public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
     return false; */
 
     // sol 2
-    if(a<=b && b<=c) {
-        return true;
-    }
-    return false;
+    ireturn (a<=b && b<=c) ? true: false;
 }
