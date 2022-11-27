@@ -1,0 +1,20 @@
+public String aOrAn(String word) {
+    //code here
+    /* sol 1
+    String vowels = 'aeiou'; 
+    if(vowels.contains(word.substring(0,1) )) {
+        return 'an '+word;
+    }
+    return 'a '+word; */
+
+    // sol 2
+    String vowels = 'aeiou';
+    if(vowels.contains(word.substring(0,1)))
+    {
+        word = 'an ' + word;
+    }else {
+        word = 'a ' + word;
+    }
+    return word;
+}
+}
