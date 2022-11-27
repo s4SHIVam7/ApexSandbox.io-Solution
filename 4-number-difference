@@ -1,0 +1,10 @@
+public Integer diff(Integer a, Integer b) {
+    //code here
+    /* sol 1
+    Integer ans = math.abs(a-b);    
+    return ans; */
+
+    //sol 2
+    return Math.abs(a-b);
+    
+}
