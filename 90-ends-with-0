@@ -1,0 +1,8 @@
+public Boolean isEndWithZero(Integer num){
+     //code here
+     // sol 1
+      if(num % 2 == 0) {
+          return true;
+      } return false;
+
+}
