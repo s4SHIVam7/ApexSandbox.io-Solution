@@ -1,0 +1,15 @@
+public Boolean isTeenager(Integer age) {
+    //code here
+    /* Sol 1
+    Boolean ans = false;
+    if(age>12 && age<20) {
+        ans = true;
+
+    }
+    return ans; */
+    
+    // sol 2
+    if(age < 13 || age > 19)
+        return false;
+    return true;
+}
