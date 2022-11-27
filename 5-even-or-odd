@@ -1,4 +1,10 @@
 public String evenOrOdd(Integer num) {
     //code here
-    return math.mod(num,2) == 0 ? 'even' : 'odd';
+    /* sol 1
+    return math.mod(num,2) == 0 ? 'even' : 'odd'; */
+
+    // sol 2
+    if(math.math(num,2)==0) {
+        return 'even';
+    } return 'odd';
 }
