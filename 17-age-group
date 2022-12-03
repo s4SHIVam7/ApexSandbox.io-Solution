@@ -1,12 +1,12 @@
 public String ageGroup(Integer n) {
     //code here
-    Integer age = n;
-    if(age >= 22)
-        return 'Adult';
-    else if(age >= 15 && age < 22)
-        return 'Youth';
-    else if(age >= 2 && age < 15 )
+    if (n>=0 && n<==1) {
+        return 'Infant';
+    } else if (n>=2 && n<==14) {
         return 'Child';
-    
-    return 'Infant';
+    } else if (n>=15 && n<==21) {
+        return 'Youth';
+    } else if (n>=22) {
+        return 'Adult';
+    } return 'error';
 }
