@@ -101,7 +101,7 @@ public Integer rockPaperScissors(String player1, String player2) {
             player1 == 'scissors' && player2 == 'paper') ? 1 :
         0; */
 
-    // sol 8
+    /* sol 8
       if (player1 == player2)
         return 0;
     else
@@ -110,7 +110,19 @@ public Integer rockPaperScissors(String player1, String player2) {
         else if (player1 == 'scissors')
             return player2 == 'paper' ? 1 : 2;
         else
-            return player2 == 'rock' ? 1 : 2; 
+            return player2 == 'rock' ? 1 : 2; */
+
+    // sol 9
+    Map<String,String> results = new Map<String,String>();
+    results.put('rock','paper');
+    results.put('paper','scissors');
+    results.put('scissors','rock');
+
+    if(results.get(player1) == player2)
+        return 2;
+    else if(player1 == player2)
+        return 0;
+    return 1;
 }
 
 
