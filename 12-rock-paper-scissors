@@ -80,7 +80,6 @@ public Integer rockPaperScissors(String player1, String player2) {
     } */
 
     // sol6
-    public Integer rockPaperScissors(String player1, String player2) {
     if (player1 == player2) return 0;
 
     Map<String, String> winmap = new Map<String, String>{
