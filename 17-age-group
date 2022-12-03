@@ -1,5 +1,6 @@
 public String ageGroup(Integer n) {
     //code here
+    /* sol1
     Integer nn = n;
     if(nn>=0 && nn<=1) {
         return 'Infant';
@@ -8,6 +9,19 @@ public String ageGroup(Integer n) {
     } else if (nn>=15 && nn<=21) {
         return 'Youth';
     } else if (nn>=22) {
+        return 'Adult';
+    } else {
+        return 'error';
+    } */
+
+    // sol 2
+     if (n>=0 && n<==1) {
+        return 'Infant';
+    } else if (n>=2 && n<=14) {
+        return 'Child';
+    } else if (n>=15 && n<=21) {
+        return 'Youth';
+    } else if (n>=22) {
         return 'Adult';
     } else {
         return 'error';
