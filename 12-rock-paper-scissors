@@ -33,7 +33,7 @@ public Integer rockPaperScissors(String player1, String player2) {
     } else {
         return 0;
     } 
-}
+
     
     /* sol 2 
     if (player1 == 'rock' && player2 =='scissors') {
