@@ -93,7 +93,6 @@ public Integer rockPaperScissors(String player1, String player2) {
     return 2;
 }
 
-}
 
 
 /* rock > scissors > paper > rock
