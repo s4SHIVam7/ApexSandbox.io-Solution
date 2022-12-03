@@ -91,20 +91,26 @@ public Integer rockPaperScissors(String player1, String player2) {
     if (winmap.get(player1) == player2) return 1;
     return 2; */
 
-    // sol 7
-    return (player1 == 'rock' && player2 == 'paper' ||
+    /* sol 7
+    return (player1 == 'rock'     && player2 == 'paper'    ||
+            player1 == 'paper'    && player2 == 'scissors' ||
+            player1 == 'scissors' && player2 == 'rock') ? 2 :
 
-        player1 == 'paper' && player2 == 'scissors' ||
+           (player1 == 'rock'     && player2 == 'scissors' ||
+            player1 == 'paper'    && player2 == 'rock'     ||
+            player1 == 'scissors' && player2 == 'paper') ? 1 :
+        0; */
 
-        player1 == 'scissors' && player2 == 'rock') ? 2 :
-
-        (player1 == 'rock' && player2 == 'scissors' ||
-
-        player1 == 'paper' && player2 == 'rock' ||
-
-        player1 == 'scissors' && player2 == 'paper') ? 1 :
-
-        0; 
+    // sol 8
+      if (player1 == player2)
+        return 0;
+    else
+        if (player1 == 'rock')
+            return player2 == 'scissors' ? 1 : 2;
+        else if (player1 == 'scissors')
+            return player2 == 'paper' ? 1 : 2;
+        else
+            return player2 == 'rock' ? 1 : 2; 
 }
 
 
