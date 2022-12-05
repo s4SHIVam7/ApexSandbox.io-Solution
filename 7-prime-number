@@ -1,15 +1,11 @@
 public Boolean isPrime(Integer num) {
     //code here
-    boolean flag = true;
-    // Check for factors
+    boolean ans = true;
     for (Integer i = 2; i <= num / 2; i++) {
-      if (math.mod(num,i) == 0) {
-        //return false;
-        flag = false;
+      if (math.mod(num,i) == 0) 
+        ans = false;
         break;
-      }
-    }
       
-    //return true;
-    return flag;
+    }
+    return ans;
 }
