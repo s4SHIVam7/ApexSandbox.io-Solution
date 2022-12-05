@@ -1,5 +1,5 @@
 public Boolean companionPlants(String plant1, String plant2) {
-    // sol 1
+    /* sol 1
     if (plant1 == 'onions' && (plant2 == 'lettuce' || plant2 == 'carrots' || plant2 == 'tomatoes'))
         return true;
     else if (plant1 == 'lettuce' && (plant2 == 'cucumbers' || plant2 == 'onions'))
@@ -10,5 +10,15 @@ public Boolean companionPlants(String plant1, String plant2) {
         return true;
     else if (plant1 == 'tomatoes' && plant2 == 'onions')
         return true;
-    else return false;
+    else return false; */
+
+    // sol 2
+     Map<String, Set<String>> companionPlants  = new Map<String, Set<String>>();
+        companionPlants.put('lettuce', new Set<String>{'cucumbers', 'onions'});
+        companionPlants.put('cucumbers', new Set<String>{'lettuce'});
+        companionPlants.put('onions', new Set<String>{'lettuce', 'carrots', 'tomatoes'});
+        companionPlants.put('carrots', new Set<String>{'onions'});
+        companionPlants.put('tomatoes', new Set<String>{'onions'});
+        
+        return companionPlants.get(plant1).contains(plant2);
 }
