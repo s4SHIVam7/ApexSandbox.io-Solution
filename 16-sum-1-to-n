@@ -5,7 +5,7 @@ public Integer sumToN(Integer n) {
 
     // sol 2
     Integer ans=0;
-    for (Integer i =1;i<n;i++) {
+    for (Integer i =1;i<=n;i++) {
         ans=ans+n;
     }
     return ans;
