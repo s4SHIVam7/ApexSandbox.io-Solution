@@ -1,13 +1,6 @@
 public Boolean isPrime(Integer num) {
     //code here
     boolean flag = true;
-      
-    // Check if number is <= 1
-    if (num <= 1) {
-      flag = false;
-      return flag;
-    }
-      
     // Check for factors
     for (Integer i = 2; i <= num / 2; i++) {
       if (math.mod(num,i) == 0) {
