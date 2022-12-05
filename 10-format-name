@@ -5,6 +5,7 @@ public String formatName(String firstName, String lastName) {
     } else if(String.isBlank(firstName) && !String.isBlank(lastName)) {
         return lastName;
     } else if(!String.isBlank(firstName) && String.isBlank(lastName)) {
-        return lastName;
+        return firstName;
     }
+    return '';
 }
