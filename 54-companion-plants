@@ -12,7 +12,7 @@ public Boolean companionPlants(String plant1, String plant2) {
         return true;
     else return false; */
 
-    // sol 2
+    /* sol 2
      Map<String, Set<String>> companionPlants  = new Map<String, Set<String>>();
         companionPlants.put('lettuce', new Set<String>{'cucumbers', 'onions'});
         companionPlants.put('cucumbers', new Set<String>{'lettuce'});
@@ -20,5 +20,18 @@ public Boolean companionPlants(String plant1, String plant2) {
         companionPlants.put('carrots', new Set<String>{'onions'});
         companionPlants.put('tomatoes', new Set<String>{'onions'});
         
-        return companionPlants.get(plant1).contains(plant2);
+        return companionPlants.get(plant1).contains(plant2); */
+
+    // sol 3
+
+    Map<String, String> mapCompaniorPlants = new Map<String, String>();
+    mapCompaniorPlants.put('lettuce','cucumbers');
+    mapCompaniorPlants.put('onions','lettuce');
+    mapCompaniorPlants.put('carrots','onions');
+    mapCompaniorPlants.put('tomatoes','onions');
+
+    if((mapCompaniorPlants.get(plant1) == plant2) || (mapCompaniorPlants.get(plant2) == plant1)){
+        return true;
+    }
+    return false;
 }
