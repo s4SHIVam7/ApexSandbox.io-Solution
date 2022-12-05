@@ -2,7 +2,9 @@ public String formatName(String firstName, String lastName) {
     //code here
     if(!String.isBlank(firstName) && !String.isBlank(lastName)) {
         return lastName+', '+firstName;
-    } else {
-        return firstName;
+    } else if(String.isBlank(firstName) && !String.isBlank(lastName)) {
+        return lastName;
+    } else if(!String.isBlank(firstName) && String.isBlank(lastName)) {
+        return lastName;
     }
 }
