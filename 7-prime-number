@@ -9,7 +9,7 @@ public Boolean isPrime(Integer num) {
     }
       
     // Check for factors
-    for (int i = 2; i <= num / 2; i++) {
+    for (Integer i = 2; i <= num / 2; i++) {
       if (math.mod(num,i) == 0) {
         flag = false;
         break;
