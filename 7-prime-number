@@ -19,10 +19,11 @@ public Boolean isPrime(Integer num) {
 
     // sol 3
     Double squareRoot = math.sqrt(num);
+    boolean ans = true;
     for(integer i = 2; i<=squareRoot; i++)
     {
         if (math.mod(num,i)== 0)
-        return false;
+        ans = false;
     }
-    return true;
+    return ans;
 }
