@@ -60,7 +60,7 @@ public Boolean companionPlants(String plant1, String plant2) {
     }
     return bro; */
 
-    // sol 6
+    /* sol 6
     return (plant1 == 'onions'   &&  (plant2 == 'lettuce' || 
             plant2 == 'carrots'   ||  plant2 == 'tomatoes')) ? true :
 
@@ -71,5 +71,19 @@ public Boolean companionPlants(String plant1, String plant2) {
            
            (plant1 == 'carrots'   &&  plant2 == 'onions') ? true:
            
-           (plant1 == 'tomatoes'  &&  plant2 == 'onions') ? true : false; 
+           (plant1 == 'tomatoes'  &&  plant2 == 'onions') ? true : false; */
+
+    // sol 7
+     String result=plant1+plant2;
+    if(result=='lettucecucumbers' || 
+       result=='cucumberslettuce' || 
+       result=='lettuceonions'    || 
+       result=='onionslettuce'    || 
+       result=='carrotsonions'    || 
+       result=='onionscarrots'    || 
+       result=='tomatoesonions'   || 
+       result=='onionstomatoes') 
+       return True;
+
+    else return False;
 }
