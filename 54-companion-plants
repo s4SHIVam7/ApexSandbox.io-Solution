@@ -1,5 +1,5 @@
 public Boolean companionPlants(String plant1, String plant2) {
-    /* sol 1
+   /* sol 1
     if (plant1 == 'onions' && (plant2 == 'lettuce' || plant2 == 'carrots' || plant2 == 'tomatoes'))
         return true;
     else if (plant1 == 'lettuce' && (plant2 == 'cucumbers' || plant2 == 'onions'))
@@ -22,8 +22,7 @@ public Boolean companionPlants(String plant1, String plant2) {
         
         return companionPlants.get(plant1).contains(plant2); */
 
-    // sol 3
-
+    /* sol 3
     Map<String, String> mapCompaniorPlants = new Map<String, String>();
     mapCompaniorPlants.put('lettuce','cucumbers');
     mapCompaniorPlants.put('onions','lettuce');
@@ -33,5 +32,19 @@ public Boolean companionPlants(String plant1, String plant2) {
     if((mapCompaniorPlants.get(plant1) == plant2) || (mapCompaniorPlants.get(plant2) == plant1)){
         return true;
     }
+    return false; */
+
+    // sol 4
+    MAP<String, Boolean> plantMap = NEW MAP<String, Boolean>{
+    'lettucecucumbers' => true,
+    'lettuceonions' => true,
+    'onionscarrots' => true,
+    'onionstomatoes' => true,
+    'cucumberslettuce' => true,
+    'onionslettuce' => true,
+    'carrotsonions' => true,
+    'tomatoesonions' => true
+    };
+    if (plantMap.get(plant1+plant2) == true ) return true;
     return false;
 }
