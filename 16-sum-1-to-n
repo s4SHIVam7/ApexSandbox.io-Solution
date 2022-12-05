@@ -1,4 +1,4 @@
 public Integer sumToN(Integer n) {
     //code here
-    return n*(n+1)*2;
+    return Integr ans = n*(n+1)*2;
 };
