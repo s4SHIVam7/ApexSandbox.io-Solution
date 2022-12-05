@@ -8,5 +8,5 @@ public Integer sumToN(Integer n) {
     for (Integer i =1;i<n;i++) {
         ans=+n;
     }
-    return n;
+    return ans;
 }
