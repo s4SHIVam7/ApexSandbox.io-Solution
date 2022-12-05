@@ -1,5 +1,11 @@
 public Integer sumToN(Integer n) {
     //code here
-    
-    return n*(n+1)/2;
+    /* sol 1
+    return n*(n+1)/2; */
+
+    // sol 2
+    for (Integer i =1;i<n;i++) {
+        n=+;
+    }
+    return n;
 }
