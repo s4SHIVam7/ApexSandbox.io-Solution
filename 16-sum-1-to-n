@@ -1,6 +1,6 @@
 public Integer sumToN(Integer n) {
     //code here
     
-    Integer ans = n*(n+1)*2;
+    Integer ans = (n*(n+1))*2;
     return ans;
 };
