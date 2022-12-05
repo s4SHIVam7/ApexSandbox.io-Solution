@@ -37,16 +37,16 @@ public Boolean companionPlants(String plant1, String plant2) {
     / sol 4
     MAP<String, Boolean> plantMap = NEW MAP<String, Boolean>{
     'lettucecucumbers' => true,
-    'lettuceonions'    => true,
-    'onionscarrots'    => true,
-    'onionstomatoes'   => true,
+    'lettuceonions' => true,
+    'onionscarrots' => true,
+    'onionstomatoes' => true,
     'cucumberslettuce' => true,
-    'onionslettuce'    => true,
-    'carrotsonions'    => true
-    'tomatoesonions'   => true
-    };
-    if (plantMap.get(plant1+plant2) == true ) return true;
-    return false; 
+    'onionslettuce' => true,
+    'carrotsonions' => true,
+    'tomatoesonions' => true
+};
+if (plantMap.get(plant1+plant2) == true ) return true;
+return false;
 
     /* sol 5
     Boolean bro = false;
