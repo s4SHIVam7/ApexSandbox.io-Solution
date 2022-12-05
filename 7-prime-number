@@ -22,9 +22,10 @@ public Boolean isPrime(Integer num) {
     boolean ans = true;
     for(integer i = 2; i<=squareRoot; i++)
     {
-        if (math.mod(num,i)== 0)
-        ans = false;
-        break;
+        if (math.mod(num,i)== 0) {
+            ans = false;
+            break;
+        }
     }
     return ans;
 }
