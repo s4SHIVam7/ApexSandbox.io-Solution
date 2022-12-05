@@ -1,5 +1,13 @@
 public Boolean isPrime(Integer num) {
     //code here
+    /* sol 1 
+    for (Integer i=2; i<num; i++) {
+        if (Math.mod(num, i) == 0) return false;
+    }
+    return true;
+    */
+
+    /* sol 2
     boolean ans = true;
     for (Integer i = 2; i <= num / 2; i++) {
       if (math.mod(num,i) == 0) {
@@ -7,5 +15,14 @@ public Boolean isPrime(Integer num) {
         break;
       }
     }
-    return ans;
+    return ans; */
+
+    // sol 3
+    Double squareRoot = math.sqrt(num);
+    for(integer i = 2; i<=squareRoot; i++)
+    {
+        if (math.mod(num,i)== 0)
+        return false;
+    }
+    return true;
 }
