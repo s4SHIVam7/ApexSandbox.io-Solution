@@ -4,9 +4,9 @@ public Integer sumToN(Integer n) {
     return n*(n+1)/2; */
 
     // sol 2
-    Integer ans;
+    Integer ans=0;
     for (Integer i =1;i<n;i++) {
-        ans=+n;
+        ans=ans+n;
     }
     return ans;
 }
