@@ -1,22 +1,22 @@
 public Integer fibonacci(Integer n) {
     //code here
-    /* sol 1
+    / sol 1
     integer firstNum = 0;
     integer secondNum = 1;
-    integer ans = 0;
-    for(integer 1=2; i<n; i++) {
+    integer ans = 1;
+    for(integer 1=2; i<=n; i++) {
         ans = firstNum + secondNum;
         firstNum = secondNum;
         secondNum = ans;
     }
-    return ans; */
+    return ans; //
 
-    // sol 2
+    /* sol 2
     Integer a = 0, b = 1, f = 1;
     for(Integer i = 2; i <= n; i ++){
         f = a + b;
         a = b;
         b = f;
     }
-    return f;
+    return f; */
 }
