@@ -7,7 +7,7 @@ public Integer fibonacci(Integer n) {
         firstNum = secondNum;
         secondNum = ans;
     }
-    return ans; //
+    return ans;
 
     /* sol 2
     Integer a = 0, b = 1, f = 1;
